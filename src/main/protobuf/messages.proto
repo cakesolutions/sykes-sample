@@ -1,0 +1,18 @@
+syntax = "proto3";
+ package com.bamtech.sykes.v1;
+
+ message Rating {
+
+     string id = 1;
+     string date = 2;
+     string text = 3;
+     User user = 4;
+     int32 stars = 5;
+ }
+
+ message User {
+
+     string id = 1;
+     string date = 2;
+     string name = 3;
+ }
